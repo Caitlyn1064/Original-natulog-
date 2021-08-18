@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+@import url(reset.css);
+@import url(clearfix.css);
+
+/*レスポンシブデザイン設定*/
+#container, #header,#contents,#main{
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#header {
+  padding-top: 10px;
+  padding: 10px 5px;
+  max-width: 1320px;
+}
+#header img {
+  width: 58px;
+  height: 58px;
+}
+body {
+  background-color: #A3CCD6;
+}
+#contents {
+  background-color: #BDA897;
+  padding: 30px 15px;
+  max-width: 1320px;
+}
+#main{
+  background-color: #FFFEF4;
+  padding: 30px 15px;
+  max-width: 1200px;
+  text-align: center;
+}
+#main h1 {
+  margin: 75px auto 30px auto;
+}
+#main p {
+  text-align: center;
+  margin-bottom: 9px;
+}
+/*input設定*/
+input#floatingInput,
+input#floatingPassword,
+input#floatingemail,
+.form-floating {
+ border-radius: 30px;
+ width: 500px;
+ margin: 0 auto;
+}
+/*input設定ここまで*/
+
+/*ボタン設定*/
+button.btn.btn-primary {
+  background-color: #BADEA2;
+  border-color: #BADEA2;
+  border-radius: 30px;
+  width: 200px;
+  margin-bottom: 9px;
+}
+/*ボタン設定ここまで*/
+#footer {
+  margin-top: 20px;
+}
