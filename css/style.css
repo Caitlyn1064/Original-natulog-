@@ -4,16 +4,18 @@
 @import url(clearfix.css);
 
 /*レスポンシブデザイン設定*/
-header,#contents, #main {
+#container, #header,#contents,#main{
   box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
 }
 
-header {
+#header {
   padding-top: 10px;
+  padding: 10px 5px;
+  max-width: 1320px;
 }
-header img {
+#header img {
   width: 58px;
   height: 58px;
 }
@@ -31,37 +33,33 @@ body {
   max-width: 1200px;
   text-align: center;
 }
-#main ul {
-  display: flex;
-  flex-direction: column;
+#main h1 {
+  margin: 75px auto 30px auto;
 }
-#main li {
-  list-style-type: none;
+#main p {
   text-align: center;
+  margin-bottom: 9px;
 }
-
-/*ここから下はPC用のスタイルとして使用する*/
-
-/*
-body {
-  background-color: #A3CCD6;
+/*input設定*/
+input#floatingInput,
+input#floatingPassword,
+input#floatingemail,
+.form-floating {
+ border-radius: 30px;
+ width: 500px;
+ margin: 0 auto;
 }
-#contents {
-  background-color: #BDA897;
-  padding: 20px;
+/*input設定ここまで*/
 
-}
-#main{
-  background-color: #FFFEF4;
-  width: 1083px;
+/*ボタン設定*/
+button.btn.btn-primary {
+  background-color: #BADEA2;
+  border-color: #BADEA2;
   border-radius: 30px;
-  margin:10px 50px;
+  width: 200px;
+  margin-bottom: 9px;
 }
-#main ul {
-  display: flex;
-  flex-direction: column;
+/*ボタン設定ここまで*/
+#footer {
+  margin-top: 20px;
 }
-#main li {
-  list-style-type: none;
-}
-*/
