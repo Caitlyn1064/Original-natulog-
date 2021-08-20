@@ -17,21 +17,32 @@
     <script src="js/bootstrap.min.js"></script>
   </head>
   <body>
-    <header>
-      
-    </header>
     <div class="container">
-      <div id="header">
-        <a href=""><img src="images/return.svg" alt=""></a>
+      <div class="row" id="header">
+        <div class="col-2">
+          <div class="flex-column">
+            <a href="#"><img id="setting" src="./images/return.svg" alt=""><p>戻る</p></a>
+          </div>
+        </div>
+        <div class="col-5">
+            <img id="logo" src="./images/logo.png" alt="">
+        </div>
+        <div class="col-2">
+          <div class="flex-column">
+            <a href="#"><img id="setting" src="./images/setting.png" alt=""><p>設定</p></a>
+          </div>
+        </div>
+      </div>
       </div>
       <div id="contents">
         <div id="main">
           <div class="row justify-content-center">
             <div class="container maxWidth">
-              <h1>転生が完了しました！</h1>
-              <h4>あなたは、○〇の○〇に転生しました！</h4>
+              <h1>現在所持中のチケット　〇〇枚</h1>
+              <img id="sad" src="./images/ticket.png" alt="">
+              <h4>今すぐゴミを回収してもらおう！</h4>
               <form action="#">
-                <button type="submit" class="btn btn-primary">My Roomで移動する</button>
+                <button type="submit" class="btn btn-primary">チケットを使用する</button>
               </form>
             </div>
             <div id="footer">

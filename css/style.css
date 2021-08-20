@@ -15,10 +15,6 @@
   padding: 10px 5px;
   max-width: 1320px;
 }
-#header img {
-  width: 58px;
-  height: 58px;
-}
 body {
   background-color: #A3CCD6;
 }
@@ -62,4 +58,26 @@ button.btn.btn-primary {
 }
 .maxWidth {
   max-width: 600px;
+}
+
+/*画像サイズ設定*/
+#main img {
+  width: 255px;
+  height: 255px;
+  padding-bottom: 25px;
+}
+#back{
+  width: 58px;
+  height: 58px;
+}
+#logo{
+  max-width: 180px;
+  height: auto;
+}
+#setting{
+  width: 58px;
+  height: 58px;
+}
+.flex-column p{
+  text-align: center;
 }
