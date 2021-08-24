@@ -17,29 +17,34 @@
     <script src="js/bootstrap.min.js"></script>
   </head>
   <body>
-    <header>
-      
-    </header>
     <div class="container">
-      <div id="header">
-        <a href=""><img src="images/return.svg" alt=""></a>
-      </div>
-      <div id="contents">
-        <div id="main">
-          <div class="row justify-content-center">
-            <div class="container maxWidth">
-              <h1>転生が完了しました！</h1>
-              <h4>あなたは、○〇の○〇に転生しました！</h4>
-              <form action="#">
-                <button type="submit" class="btn btn-primary">My Roomで移動する</button>
-              </form>
-            </div>
-            <div id="footer">
-              <p>@natulog</p>
-            </div>
+      <div class="d-flex justify-content-between" id="header">
+        <div class="col-1">
+            <a href="#" class="text-decoration-none"><img class="mx-auto d-block" id="return" src="./images/return.svg"></a>
+        </div>
+        <div class="col-4">
+            <img class="mx-auto d-block" id="logo" src="./images/logo.png">
+        </div>
+        <div class="col-1">
+          <img class="mx-auto d-block" id="setting" src="./images/setting.png">
+        </div>
+    </div>
+    <div id="contents">
+      <div id="main">
+        <div class="row justify-content-center">
+          <div class="container maxWidth">
+            <h1>転生が完了しました！</h1>
+            <h4>あなたは、○〇の○〇に転生しました！</h4>
+            <form action="#">
+              <button type="submit" class="btn btn-primary">My Roomで移動する</button>
+            </form>
+          </div>
+          <div id="footer">
+            <p>@natulog</p>
           </div>
         </div>
       </div>
+    </div>
     </div>
   </body>
 </html>

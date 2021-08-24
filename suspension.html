@@ -17,13 +17,10 @@
     <script src="js/bootstrap.min.js"></script>
   </head>
   <body>
-    <header>
-      
-    </header>
     <div class="container">
       <div class="d-flex justify-content-between" id="header">
         <div class="col-1">
-            <a href="#" class="text-decoration-none"><img class="mx-auto d-block" id="return" src="./images/return.svg"></a>
+            <a href="./toppage.html" class="text-decoration-none"><img class="mx-auto d-block" id="return" src="./images/return.svg"></a>
         </div>
         <div class="col-4">
             <img class="mx-auto d-block" id="logo" src="./images/logo.png">
@@ -31,33 +28,21 @@
         <div class="col-1">
           <!-- <img class="mx-auto d-block" id="setting" src="./images/setting.png"> -->
         </div>
-    </div>
+      </div>
       <div id="contents">
         <div id="main">
           <div class="row justify-content-center">
             <div class="container maxWidth">
-              <h1>アカウントにログイン</h1>
+              <h1>ログインできません。</h1>
+              <div id="sub">
+              <p>お客様のアカウントはnatulog利用規約に違反していると判断されたため、一時的に利用停止とさせていただきます。解除予定日は○〇後です。</p>
+              </div>
               <form action="#">
-                <div class="form-floating mb-3">
-                  <input type="email" class="form-control shadow-sm p-3 mb-3" id="floatingInput" placeholder="name@example.com">
-                  <label for="floatingInput">ID</label>
-                </div>
-                <div class="form-floating">
-                  <input type="password" class="form-control shadow-sm p-3 mb-3"  id="floatingPassword" placeholder="Password">
-                  <label for="floatingPassword">Password</label>            
-                </div>
-                <button type="submit" class="btn btn-primary">サインイン</button>
+                <button type="submit" class="btn btn-primary">TOPに戻る</button>
               </form>
             </div>
-            <div class="form-floating">
-              <p>or</p>
-              <p>未登録の方は</p>
-              <div class="col-auto">
-                  <button type="submit" class="btn btn-primary">サインアップ</button>
-              </div>
-              <div id="footer">
-                <p>@natulog</p>
-              </div>
+            <div id="footer">
+              <p>@natulog</p>
             </div>
           </div>
         </div>
