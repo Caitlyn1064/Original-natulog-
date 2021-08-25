@@ -3,18 +3,28 @@
 @import url(reset.css);
 @import url(clearfix.css);
 
-/*レスポンシブデザイン設定*/
+/*レスポンシブ設定ここから*/
 #header,#contents,#main,#footer{
   box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
 }
+/*レスポンシブ設定ここまで*/
 
+/*ヘッダー設定ここから*/
 #header {
-  padding-top: 10px;
-  padding: 10px 5px;
+  padding: 50px 10px 0 10px;
   max-width: 1320px;
 }
+.col-1 {
+  padding-top: 25px;
+}
+.col-4 {
+  padding-top: 20px;
+}
+/*ヘッダー設定ここまで*/
+
+/*基本設定ここから*/
 body {
   background-color: #A3CCD6;
 }
@@ -23,56 +33,71 @@ body {
   padding: 30px 15px;
   /* max-width: 1320px; */
 }
-#main{
+.main,
+#main-top,
+#main-middle,
+#main-bottom{
   background-color: #FFFEF4;
   padding: 30px 15px;
   text-align: center;
 }
-#main h1 {
+.main h1 {
   margin: 75px auto 30px auto;
 }
-#main p {
-  text-align: center;
+.main p {
   margin-bottom: 9px;
 }
-/*input設定*/
-input#floatingInput,
-input#floatingPassword,
-input#floatingemail,
-.form-floating {
- border-radius: 30px;
+#sub {
+  padding: 0 50px 20px 50px;
 }
-/*input設定ここまで*/
+#footer {
+  margin-top: 20px;
+}
+.maxWidth {
+  max-width: 450px;
+}
+/*基本設定ここから*/
+
+/*ブロック管理ページ設定ここから*/
+.d-flex.justify-content-center {
+  margin-bottom: 20px;
+}
+.align-self-center {
+  padding-left: 10px;
+}
+/*ブロック管理ページ設定ここまで*/
+
+/*アカウント管理画面設定ここから*/
+
+/*アカウント管理画面設定ここから*/
 
 /*ボタン設定*/
-button.btn.btn-primary {
+button.btn.btn-primary,
+a.btn.btn-primary  {
   background-color: #BADEA2;
   border-color: #BADEA2;
   border-radius: 30px;
   margin-bottom: 9px;
   padding: 10px 70px;
 }
+button.btn.btn-primary2 {
+  background-color: #BADEA2;
+  border-color: #BADEA2;
+  border-radius: 15px;
+  margin-bottom: 9px;
+  margin: 10px 10px;
+}
 /*ボタン設定ここまで*/
-#footer {
-  margin-top: 20px;
-}
-.maxWidth {
-  max-width: 600px;
-}
 
-/*画像サイズ設定*/
-#main img {
+/*画像サイズ設定ここから*/
+img#main-img  {
   width: 255px;
   height: 255px;
   padding-bottom: 25px;
 }
-#back{
+#return{
   width: 58px;
   height: 58px;
-}
-#logo{
-  max-width: 180px;
-  height: auto;
 }
 #setting{
   width: 58px;
@@ -81,3 +106,53 @@ button.btn.btn-primary {
 .flex-column p{
   text-align: center;
 }
+#logo {
+  min-width: 180px;
+  max-width: 80%;
+  height: auto;
+}
+img.profile-img {
+  width: 100px;
+  height: 100px;
+}
+img.blocked-img {
+  width: 65px;
+  height: 65px;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+/*画像設定ここまで*/
+
+/*input設定ここから*/
+input#floatingInput,
+input#floatingPassword,
+input#floatingemail,
+textarea#floatingText,
+.form-floating {
+ border-radius: 30px;
+}
+/*input設定ここまで*/
+
+/* サインアップinput設定ここから*/
+.form-floating,
+.form-floating.mb-3 {
+  display: block;
+}
+/* サインアップinput設定ここまで*/
+
+/*通報画面input設定ここから*/
+textarea#floatingText {
+  height: 200px;
+}
+/*通報画面input設定ここまで*/
+
+/*アカウント画面input設定ここから*/
+.input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3), 
+.input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu){
+  border-radius: 30px;
+}
+/*アカウント画面input設定ここまで */
