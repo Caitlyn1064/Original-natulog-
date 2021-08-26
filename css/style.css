@@ -11,19 +11,6 @@
 }
 /*レスポンシブ設定ここまで*/
 
-/*ヘッダー設定ここから*/
-#header {
-  padding: 50px 10px 0 10px;
-  max-width: 1320px;
-}
-.col-1 {
-  padding-top: 25px;
-}
-.col-4 {
-  padding-top: 20px;
-}
-/*ヘッダー設定ここまで*/
-
 /*基本設定ここから*/
 body {
   background-color: #A3CCD6;
@@ -38,8 +25,8 @@ body {
 #main-middle,
 #main-bottom{
   background-color: #FFFEF4;
-  padding: 30px 15px;
   text-align: center;
+  margin: 2px 6px;
 }
 .main h1 {
   margin: 75px auto 30px auto;
@@ -56,20 +43,16 @@ body {
 .maxWidth {
   max-width: 450px;
 }
-/*基本設定ここから*/
+/*基本設定ここまで*/
 
-/*ブロック管理ページ設定ここから*/
-.d-flex.justify-content-center {
-  margin-bottom: 20px;
+/*ヘッダー設定ここから*/
+#header {
+  padding-top:50px;
 }
-.align-self-center {
-  padding-left: 10px;
+.col-2 {
+  padding: 0;
 }
-/*ブロック管理ページ設定ここまで*/
-
-/*アカウント管理画面設定ここから*/
-
-/*アカウント管理画面設定ここから*/
+/*ヘッダー設定ここまで*/
 
 /*ボタン設定*/
 button.btn.btn-primary,
@@ -78,7 +61,7 @@ a.btn.btn-primary  {
   border-color: #BADEA2;
   border-radius: 30px;
   margin-bottom: 9px;
-  padding: 10px 70px;
+  padding: 10px 40px;
 }
 button.btn.btn-primary2 {
   background-color: #BADEA2;
@@ -86,6 +69,9 @@ button.btn.btn-primary2 {
   border-radius: 15px;
   margin-bottom: 9px;
   margin: 10px 10px;
+}
+#contents-btn {
+  max-width: 150px;
 }
 /*ボタン設定ここまで*/
 
@@ -95,21 +81,12 @@ img#main-img  {
   height: 255px;
   padding-bottom: 25px;
 }
-#return{
-  width: 58px;
-  height: 58px;
-}
-#setting{
-  width: 58px;
-  height: 58px;
-}
-.flex-column p{
-  text-align: center;
-}
-#logo {
-  min-width: 180px;
-  max-width: 80%;
+#return,
+#setting,
+#logo{
+  width: 80%;
   height: auto;
+  max-width: 50%;
 }
 img.profile-img {
   width: 100px;
@@ -125,7 +102,49 @@ img.blocked-img {
   align-items: center;
   padding-bottom: 20px;
 }
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
 /*画像設定ここまで*/
+.flex-column p{
+  text-align: center;
+}
+/*ブロック管理ページ設定ここから*/
+.d-flex.justify-content-center {
+  margin-bottom: 20px;
+}
+.align-self-center {
+  padding-left: 10px;
+}
+/*ブロック管理ページ設定ここまで*/
+
+/*アカウント管理画面設定ここから*/
+
+/*アカウント管理画面設定ここから*/
+
+/*マイルーム画面設定ここから*/
+div#main-top,
+div#main-middle,
+div#main-bottom {
+  border-radius: 20px;
+}
+.box {
+  background:#BDA897;
+  border: 1px #BDA897 solid; 
+  padding:2px;
+}
+.col-5.align-self-start {
+  padding: 0;
+}
+div#main-top {
+  background-image: url(../images/海.jpeg);
+  background-size: cover;
+  max-width: 1050px;
+  height: 300px;
+}
+/*マイルーム画面設定ここまで*/
 
 /*input設定ここから*/
 input#floatingInput,
