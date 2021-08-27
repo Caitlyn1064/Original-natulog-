@@ -73,6 +73,25 @@ button.btn.btn-primary2 {
 #contents-btn {
   max-width: 150px;
 }
+a.list-group-item.list-group-item-action.shadow-sm.p-2.mb-3 {
+  background-color: #BADEA2;
+  border-color: #BADEA2;
+  border-radius: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+a.list-group-item.list-group-item-action.shadow-sm.p-2.mb-3:hover {
+  background-color: #D6ADA3;
+  border-color: #D6ADA3;
+}
+a.list-group-item.list-group-item-action.shadow-sm.p-2.mb-3:active {
+  background-color: #ccad9d;
+  border-color: #ccad9d;
+}
+.list-group-item {
+      background-color: none;
+      border: 1px solid rgb(0 0 0 / 0%);
+}
 /*ボタン設定ここまで*/
 
 /*画像サイズ設定ここから*/
@@ -143,6 +162,12 @@ div#main-top {
   background-size: cover;
   max-width: 1050px;
   height: 300px;
+}
+a {
+  text-align: center;
+}
+.flex-column {
+  padding-top: 10px;
 }
 /*マイルーム画面設定ここまで*/
 
