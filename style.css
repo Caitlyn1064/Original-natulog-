@@ -21,7 +21,7 @@ body {
 #contents {
   background-color: #BDA897;
   padding: 30px 15px;
-  /* max-width: 1320px; */
+  max-width: 1320px;
 }
 a{
   text-decoration: none;
@@ -113,9 +113,10 @@ img#main-img  {
   max-width: 60%;
 }
 #logo-left {
-  width: 80%;
+  width: 100%;
   height: auto;
-  max-width: 80%
+  max-width: 80%;
+  float: left;
 }
 img.profile-img {
   width: 100px;
@@ -143,10 +144,8 @@ img.blocked-img {
   height: auto;
   display: block;
 }
-.main-top-img{
-  position: fixed;
-  width: auto;
-  height: 150px;
+.main-top-bg {
+  border-radius: 20px;
 }
 @media (max-width: 1400px) {
   .main-top-bg {
@@ -158,7 +157,16 @@ img.blocked-img {
       height: auto;
   }
 }
-
+.main-top-img{
+  position: absolute;
+  width: auto;
+  height: 100px;
+  top: 50px;
+}
+@media screen and (max-width: 1900px) {
+	.main-top-img {
+		left: calc(500 / 1900 * 100vw);
+	}
 /*画像設定ここまで*/
 
 /*ブロック管理ページ設定ここから*/
@@ -208,6 +216,20 @@ a.list-group-item.list-group-item-action.shadow-sm.p-2.mb-3 {
   margin: 0 auto;
 }
 .header-p {
+  margin: 0;
+}
+input.post {
+  background-color: #FFFEF4;
+  border: #FFFEF4;
+}
+input.post[type=text]:focus {
+  outline: none;
+}
+input.post::placeholder {
+  text-align: center;
+}
+.post-p{
+  font-size: 5px;
   margin: 0;
 }
 /*マイルーム画面設定ここまで*/
