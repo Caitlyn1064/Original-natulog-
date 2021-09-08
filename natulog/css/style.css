@@ -75,6 +75,15 @@ a.list-group-item.list-group-item-action.shadow-sm.p-2.mb-3 {
   color: white;
   font-size: 15px; 
 }
+button.btn.shadow-sm:hover,
+button.btn.shadow-sm-sm:hover,
+a.btn.shadow-sm:hover,
+a.list-group-item.list-group-item-action.shadow-sm.p-2.mb-3:hover,
+a.list-group-item.list-group-item-action.shadow-sm.p-2.mb-3:active {
+  background-color: #D6ADA3;
+  border-color: #D6ADA3;
+  color: white;
+}
 button.btn.btn-primary,
 a.btn.btn-primary {
   margin-bottom: 9px;
@@ -87,25 +96,11 @@ a.btn.shadow-sm {
   padding: 10px 20px;
   min-width: 150px; 
 }
-button.btn.shadow-sm:hover,
-a.btn.shadow-sm:hover {
-  background-color: #D6ADA3;
-  border-color: #D6ADA3;
-  color: white;
-}
 button#button-addon2 {
   margin: 10px;
 }
 #contents-btn {
   max-width: 150px;
-}
-a.list-group-item.list-group-item-action.shadow-sm.p-2.mb-3:hover {
-  background-color: #D6ADA3;
-  border-color: #D6ADA3;
-}
-a.list-group-item.list-group-item-action.shadow-sm.p-2.mb-3:active {
-  background-color: #ccad9d;
-  border-color: #ccad9d;
 }
 .list-group-item {
       background-color: none;
@@ -140,6 +135,10 @@ img.blocked-img {
   width: 65px;
   height: 65px;
 }
+img.posted-img {
+  width: 55px;
+  height: 55px;
+}
 .wrap {
   display: flex;
   flex-direction: column;
@@ -168,18 +167,17 @@ img.blocked-img {
   }
   img {
       max-width: 100%;
-      height: auto;
   }
 }
-.main-top-img{
+p.charactor {
   position: absolute;
-  max-width: 100%;
-  height: 150px;
+  left: 50%;
+  top: 30%;
+  width: 30%;
+  transform: translate(-50%, -50%);
 }
-@media screen and (max-width: 1400px) {
-	.main-top-img {
-		left: calc(500 / 2906 * 100vw);
-	}
+img.main-top-img {
+  max-height: 150px;
 }
 .top-gomi-left
 ,.top-gomi-right{
@@ -250,11 +248,11 @@ a.list-group-item.list-group-item-action.shadow-sm.p-2.mb-3 {
 .header-p {
   margin: 0;
 }
-input.post {
+textarea.post.form-control {
   background-color: #FFFEF4;
   border: #FFFEF4;
 }
-input.post[type=text]:focus {
+textarea.post.form-control:focus {
   outline: none;
 }
 input.post::placeholder {
@@ -263,6 +261,19 @@ input.post::placeholder {
 .post-p{
   font-size: 5px;
   margin: 0;
+}
+div#posted {
+  padding: 10px;
+}
+.col-3.align-self-start.left,
+.col-7.align-self-center {
+  padding: 0;
+}
+.post-p {
+
+
+
+  overflow-wrap: break-word;
 }
 /*マイルーム画面設定ここまで*/
 
