@@ -106,6 +106,12 @@ button#button-addon2 {
       background-color: none;
       border: 1px solid rgb(0 0 0 / 0%);
 }
+
+@media (max-width: 750px) {
+  button.btn.shadow-sm-sm {
+    font-size: 0.7rem;
+  }
+}
 /*ボタン設定ここまで*/
 
 /*画像サイズ設定ここから*/
@@ -196,6 +202,7 @@ img.main-top-img {
 .post-pic,
 .post-send {
   max-width: 100%;
+  width: 50px;
 }
 /*画像設定ここまで*/
 
@@ -209,7 +216,6 @@ img.main-top-img {
 /*ブロック管理ページ設定ここまで*/
 
 /*アカウント管理画面設定ここから*/
-
 /*アカウント管理画面設定ここから*/
 
 /*マイルーム画面設定ここから*/
@@ -229,12 +235,6 @@ div#main-top {
 .col-5.align-self-start {
   padding: 0;
 }
-/* div#main-top {
-  background-image: url(../images/海.jpeg);
-  background-size: cover;
-  max-width: 1050px;
-  height: 300px;
-} */
 a.list-group-item.list-group-item-action.shadow-sm.p-2.mb-3 {
   font-size: 1rem;
 }
@@ -263,19 +263,24 @@ input.post::placeholder {
   margin: 0;
 }
 div#posted {
-  padding: 10px;
+  padding: 20px;
 }
 .col-3.align-self-start.left,
 .col-7.align-self-center {
   padding: 0;
 }
-.post-p {
 
-
-
-  overflow-wrap: break-word;
-}
 /*マイルーム画面設定ここまで*/
+
+/*Other User Room画面ここから*/
+.col-4.align-self-start.left,
+.col-6{
+  padding: 0;
+}
+.header-wrap {
+  float: left;
+}
+/*Other User Room画面ここまで*/
 
 /*input設定ここから*/
 input#floatingInput,
