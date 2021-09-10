@@ -4,7 +4,7 @@
 @import url(clearfix.css);
 
 /*レスポンシブ設定ここから*/
-#header,#contents,#main,#footer{
+.header,#contents,#main,#footer{
   box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
@@ -52,7 +52,7 @@ a{
 /*基本設定ここまで*/
 
 /*ヘッダー設定ここから*/
-#header {
+.header {
   padding-top:50px;
 }
 .col-2 {
@@ -279,6 +279,10 @@ div#posted {
 }
 .header-wrap {
   float: left;
+}
+.row.justify-content-between.border-bottom {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 /*Other User Room画面ここまで*/
 
