@@ -30,6 +30,7 @@ a{
 .main,
 #main-top,
 #main-middle,
+.main-middle.shadow-sm.p-3,
 #main-bottom{
   background-color: #FFFEF4;
   margin: 2px 6px;
@@ -219,9 +220,10 @@ img.main-top-img {
 /*アカウント管理画面設定ここから*/
 
 /*マイルーム画面設定ここから*/
-div#main-top,
-div#main-middle,
-div#main-bottom {
+#main-top,
+#main-middle,
+.main-middle.shadow-sm.p-3,
+#main-bottom {
   border-radius: 20px;
 }
 div#main-top {
@@ -315,3 +317,9 @@ textarea#floatingText {
   border-radius: 30px;
 }
 /*アカウント画面input設定ここまで */
+
+/*ショップ画面設定ここから*/
+.title {
+  text-align: left;
+}
+/*ショップ画面設定ここまで*/
