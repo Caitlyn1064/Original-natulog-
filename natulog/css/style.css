@@ -31,10 +31,13 @@ a{
 #main-top,
 #main-middle,
 .main-middle.shadow-sm.p-3,
-#main-bottom{
+#main-bottom,
+.shop-main.shadow-sm.p-3{
   background-color: #FFFEF4;
   margin: 2px 6px;
+  border-radius: 20px
 }
+
 .main h1 {
   margin: 75px auto 30px auto;
 }
@@ -69,7 +72,8 @@ button.btn.shadow-sm,
 button.btn.shadow-sm-sm,
 a.btn.shadow-sm,
 button.btn.btn-primary2,
-a.list-group-item.list-group-item-action.shadow-sm.p-2.mb-3 {
+a.list-group-item.list-group-item-action.shadow-sm.p-2.mb-3,
+button.team-btn.btn.shadow-sm {
   background-color: #BADEA2;
   border-color: #BADEA2;
   border-radius: 30px;
@@ -99,6 +103,10 @@ a.btn.shadow-sm {
 }
 button#button-addon2 {
   margin: 10px;
+}
+button.team-btn.btn.shadow-sm {
+  max-width: 200px;
+  margin-top: 25px;
 }
 #contents-btn {
   max-width: 150px;
@@ -220,12 +228,7 @@ img.main-top-img {
 /*アカウント管理画面設定ここから*/
 
 /*マイルーム画面設定ここから*/
-#main-top,
-#main-middle,
-.main-middle.shadow-sm.p-3,
-#main-bottom {
-  border-radius: 20px;
-}
+
 div#main-top {
   position: relative;
 }
@@ -323,3 +326,34 @@ textarea#floatingText {
   text-align: left;
 }
 /*ショップ画面設定ここまで*/
+
+/* ラジオボタンの○を消す */
+input[type="radio"] {
+  display: none;
+}
+
+/* 画像の周りに隙間をあける */
+label img {
+ margin: 3px;
+ padding: 5px;
+}
+
+/* 未選択の場合、色を薄くする */
+input[type="radio"] + label img {
+  opacity:0.2;
+}
+/* 選択済みの場合、色を濃くする */
+input[type="radio"]:checked + label img {
+  opacity:1;
+}
+.shop-main.shadow-sm.p-3 {
+  position: relative;
+}
+.shop-link{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height:100%; 
+  width: 100%; 
+}
