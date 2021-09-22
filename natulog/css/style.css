@@ -4,7 +4,7 @@
 @import url(clearfix.css);
 
 /*レスポンシブ設定ここから*/
-.header,#contents,#main,#footer{
+.header,.contents,#main,#footer{
   box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
@@ -18,7 +18,7 @@ body {
   font-size: 12px;
   color: black;
 }
-#contents {
+.contents {
   background-color: #BDA897;
   padding: 30px 15px;
   max-width: 1320px;
@@ -228,7 +228,6 @@ img.main-top-img {
 /*アカウント管理画面設定ここから*/
 
 /*マイルーム画面設定ここから*/
-
 div#main-top {
   position: relative;
 }
@@ -356,4 +355,15 @@ input[type="radio"]:checked + label img {
   left: 0;
   height:100%; 
   width: 100%; 
+}
+
+/*トップページここから*/
+.row.toppage-top,
+.col-4.right,
+.col-8.left {
+  background-color: white;
+  border-radius: 20px;
+}
+.row.toppage-top {
+  margin-bottom: 5px;
 }
